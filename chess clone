@@ -1,0 +1,32 @@
+class ChessGame:
+    def __init__(self):
+        self.board = self.initialize_board()
+        self.current_player = 'White'  # White or Black
+        self.game_over = False
+
+    def initialize_board(self):
+        # Initialize the chessboard with starting positions
+        # Return a data structure representing the board
+
+    def print_board(self):
+        # Print the current state of the chessboard
+
+    def make_move(self, move):
+        # Validate and apply the given move to the board
+
+    def is_checkmate(self):
+        # Check if the current player is in checkmate
+        # Return True or False
+
+    def play(self):
+        while not self.game_over:
+            self.print_board()
+            move = input("Enter your move: ")
+            self.make_move(move)
+            if self.is_checkmate():
+                self.game_over = True
+                print("Checkmate!")
+
+# Main
+game = ChessGame()
+game.play()
